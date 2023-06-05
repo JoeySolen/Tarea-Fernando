@@ -5,7 +5,48 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #EDE6B8;
+    background-color: var(--body-bg-color);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+:root {
+    --body-bg-color: #fffded;
+    --body-bg-color-2:#EDE6B8;
+    --contrast-green-1:#82BCAE;
+    --contras-green-2:#70a79a;
+    --contrast-pink-1:#F26665;
+    --contrast-pink-2:#da9090;
+    --complement-bg-1:#F3B16730;
+}
+
+h1{
+    width: 70%;
+    margin-top: 0;
+    margin-left: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    text-align: left;
+    line-height: 1.3em;
+    border-radius: 0 0 15px 0;
+    background-color: var(--contrast-green-1);
+    color: #fff;
+    font-size: 2.6em;
+}
+
+h2{
+    width: 25%;
+    border-left: solid 2px;
+    border-bottom: solid 2px;
+    border-radius: 0 15px 0 0;
+    padding-left: .2em;
+    padding-bottom: .1em;
+    background-color: var(--complement-bg-1);
+    border-color: #3b7c6d50;
+    color:#275c4e;
+    font-size: 2.1em;
 }
 
   /* Estilos para el menú lateral */
@@ -16,9 +57,9 @@ body {
     height: 100vh;
     width: 200px;
     box-sizing: border-box;
-    background-color: #82BCAE;
+    background-color: var(--contrast-green-1);
     border: solid 1px;
-    border-color: #70a79a;
+    border-color: var(--contras-green-2);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
     box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
@@ -44,7 +85,7 @@ body {
 
 .sidebar li:hover{
     border-left:solid 3px;
-    border-color: #F26665;
+    border-color: var(--contrast-pink-1);
     text-decoration: none;
     color: #fff;
     padding-left: 17px;
@@ -65,7 +106,8 @@ body {
     bottom: 20px;
     width: 50px;
     height: 50px;
-    background-color: #f1f1f1;
+    background-color: var(--contrast-pink-2);
+    color: var(--body-bg-color);
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -76,16 +118,13 @@ body {
 }
 
 .floating-button:hover {
-    background-color: #ccc;
-}
-
-.main-title{
-    text-align: center;
+    background-color: var(--contrast-pink-1);
 }
 
 .main-container{
     width: 60%;
     margin: auto;
+    line-height: 1.8em;
 }
 
   /* Estilos para el contenido de las secciones */
@@ -94,11 +133,23 @@ section {
     margin-top: 20px;
 }
 
+.btn-home{
+    position: relative;
+    background-color: #669e91;
+    color: #fffceb;
+    padding: 20px;
+    cursor: pointer;
+}
+.btn-home:hover{
+    background-color: #3b7c6d;
+}
+
 /*Estilos paa el acordeón del menú lateral*/
 .accordion{
-    position: absolute;
+    position: relative;
     width: 100%;
     left: 0;
+    transition: max-height 0.2s ease-out;
 }
 
 .accordion-header {
@@ -123,14 +174,14 @@ section {
 }
 
   /* Estilos responsive */
-@media screen and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 768px) {
 .sidebar {
-    width: 100%;
+    position: static;
     height: auto;
-    transform: translateX(-100%);
-    background-color: rgba(241, 241, 241, 0.9);
-    overflow-y: auto;
-    padding: 20px 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    transform: none;
 }
 
     .sidebar.closed {
