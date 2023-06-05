@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +15,6 @@ body {
     top: 0;
     height: 100vh;
     width: 200px;
-    padding: 50px;
     box-sizing: border-box;
     background-color: #82BCAE;
     border: solid 1px;
@@ -30,24 +32,29 @@ body {
 
 .sidebar ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar li {
-    margin-bottom: 15px;
-}
-
-.sidebar li a{
-    color: #fff;
-    text-decoration: none;
-    padding-left: 3px;
+    padding: 0px;
+    width: 100%;
     box-sizing: border-box;
 }
 
-.sidebar li a:hover{
+.sidebar a{
+    text-decoration: none;
     color: #fff;
-    border-left: solid 3px;
+}
+
+.sidebar li:hover{
+    border-left:solid 3px;
+    border-color: #F26665;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 17px;
+}
+
+.sidebar a li{
+    margin-top: 1px;
+    padding: 8px 20px;
+    height: 2em;
+    top: 50%;
     box-sizing: border-box;
 }
 
@@ -89,28 +96,30 @@ section {
 
 /*Estilos paa el acordeón del menú lateral*/
 .accordion{
-    position: relative;
-}
-
-.accordion-item {
-    border-bottom: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
 .accordion-header {
     position: relative;
-    background-color: #f5f5f5;
-    padding: 10px;
+    background-color: #669e91;
+    color: #fffceb;
+    padding: 20px;
     cursor: pointer;
-    width: 100%;
+}
+
+.accordion-header:hover{
+    background-color: #3b7c6d;
 }
 
 .accordion-content {
-    padding: 10px;
     display: none;
 }
 
 .accordion-content.show {
     display: block;
+    padding: 20px;
 }
 
   /* Estilos responsive */
