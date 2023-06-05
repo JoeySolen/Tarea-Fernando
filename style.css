@@ -49,7 +49,9 @@ h2{
     font-size: 2.1em;
 }
 
-  /* Estilos para el menú lateral */
+
+@media screen and (min-width: 769px) and (max-width: 8000px) {
+    /* Estilos para el menú lateral */
 .sidebar {
     position: fixed;
     left: 0;
@@ -171,11 +173,12 @@ section {
 .accordion-content.show {
     display: block;
     padding: 20px;
+    }
 }
 
   /* Estilos responsive */
-@media (min-width: 200px) and (max-width: 768px) {
-.sidebar {
+@media (min-height: 680px), screen and (orientation: portrait){
+    .sidebar {
     position: static;
     height: auto;
     width: 100%;
