@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tutor | Clasificación de los suelos</title>
+</head>
+<body>
+    <div class="sidebar closed">
+    
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">Tipos de suelo</div>
+                    <div class="accordion-content">
+                        <!-- Menú lateral -->
+                        <ul>
+                            <a href="#gelisoles"><li>Gelisoles</li></a>
+                            <a href="#alfisoles"><li>Alfisoles</li></a>
+                            <a href="#andisoles"><li>Andisoles</li></a>
+                            <a href="#aridisoles"><li>Aridisoles</li></a>
+                            <a href="#entisoles"><li>Entisoles</li></a>
+                            <a href="#inceptisoles"><li>Inceptisoles</li></a>
+                            <a href="#histosoles"><li>Histosoles</li></a>
+                            <a href="#oxisoles"><li>Oxisoles</li></a>
+                            <a href="#espodosoles"><li>Espodosoles</li></a>
+                            <a href="#mollisoles"><li>Mollisoles</li></a>
+                            <a href="#ultisoles"><li>Ultisoles</li></a>
+                            <a href="#vertisoles"><li>Vertisoles</li></a>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="btn-home">
+            <a href="./tutor.html">Tutor</a>
+        </div>
+    </div>
+<!-- Botón flotante -->
+<div class="floating-button" onclick="toggleSidebar()">
+    <span>☰</span>
+</div>
+<div class="main-container">
+    <div class="main-title">
+        <h1>FORMULARIO</h1>
+    </div>
+    <section>
+        <div class="chat-container">
+            <div id="chat-log" class="chat-log"></div>
+            <input type="text" id="user-input" class="user-input" placeholder="Escribe tu mensaje...">
+            <button id="send-button" class="send-button">Enviar</button>
+        </div>
+    </section>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
