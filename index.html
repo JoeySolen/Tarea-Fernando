@@ -14,13 +14,18 @@
 <body>
     
 <div class="sidebar closed">
-    
+    <a href="./index.html">
+    <div class="btn-home">
+        Inicio
+    </div>
+    </a>
     <div class="accordion">
         <div class="accordion-item">
             <div class="accordion-header">Tipos de suelo</div>
                 <div class="accordion-content">
                     <!-- Menú lateral -->
                     <ul>
+                        <a href="#introduccion"><li>Introducción</li></a>
                         <a href="#gelisoles"><li>Gelisoles</li></a>
                         <a href="#alfisoles"><li>Alfisoles</li></a>
                         <a href="#andisoles"><li>Andisoles</li></a>
@@ -37,47 +42,227 @@
             </div>
         </div>
     </div>
-    <div class="btn-home">
-        <a href="./tutor.html">Tutor</a>
+    <a href="./tutor.html">
+    <div class="btn-tutor">
+        Tutor
     </div>
+    </a>
 </div>
 
 
 <!-- Botón flotante -->
-<div class="floating-button" onclick="toggleSidebar()">
-    <span>☰</span>
+<div class="floating-button-container">
+    <div class="floating-button" onclick="toggleSidebar()">
+        <span>☰</span>
+    </div>
 </div>
-
 <div class="main-container">
     
     <div class="main-title">
         <h1>SUELO SEGÚN EL DEPARTAMENTO DE AGRICULTURA DE LOS ESTADOS UNIDOS</h1>
     </div>
     <!-- Secciones de la página -->
-    <section id="gelisoles">
-    <h2>Gelisoles</h2>
-    <div class="text">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>  
-    </div>
+    <section id="introduccion">
+    <h2>Introducción</h2>
     <div class="floor-pic">
-        <img src="./img/Gelisol.webp" alt="">
+        <img src="./img/Gelisol.webp" class="img-first" alt="">
+        <div class="text">
+            <p>La palabra “suelo”, como muchas otras, tiene varios 
+                significados. En su significado tradicional, el suelo es el 
+                medio natural para el desarrollo de plantas terrestres, ya 
+                sea que tenga o no horizontes discernibles. Este concepto 
+                es todavía la forma más común como se comprende la 
+                palabra, y es el principal interés en el que el suelo centra 
+                su significado. Las personas consideran al suelo 
+                importante porque sostiene a las plantas que nos 
+                proporcionan comida, fibras, medicamentos y otras 
+                necesidades humanas, y porque filtra al agua y recicla 
+                excretas. El suelo cubre a la superficie terrestre como un 
+                continuo, excepto en áreas con afloramientos rocosos, de 
+                congelamiento perpetuo, en aguas profundas, o sobre los 
+                hielos de los glaciares estériles. En ese sentido, el suelo 
+                tiene un espesor que está determinado por la profundidad 
+                de enraizamiento de las plantas.</p>
+            <p>Suelo, en este texto, es un cuerpo natural que 
+                comprende a sólidos (minerales y materia orgánica), 
+                líquidos y gases que ocurren en la superficie de las tierras, 
+                que ocupa un espacio y que se caracteriza por uno o 
+                ambos de los siguientes: horizontes o capas que se 
+                distinguen del material inicial como resultado de 
+                adiciones, pérdidas, transferencias y transformaciones de 
+                energía y materia o por la habilidad de soportar plantas en 
+                un ambiente natural (Soil Survey Staff, 1999). Esta 
+                definición es una ampliación de la versión previa de la 
+                Taxonomía de Suelos (Soil Survey Staff, 1975), para 
+                incluir a los suelos de las áreas de la Antártica donde la 
+                pedogénesis ocurre pero el clima es demasiado agresivo 
+                para permitir el desarrollo de plantas superiores.</p>
+            <p>El límite superior del suelo es el límite entre el suelo y 
+                el aire, aguas poco profundas, plantas vivas o materiales 
+                de plantas que no han empezado a descomponerse. Se 
+                considera que las áreas no tienen suelo si la superficie está 
+                cubierta en forma permanente por agua muy profunda 
+                (típicamente a más de 2.5 m) para no permitir el 
+                desarrollo de vegetación. Los límites horizontales del 
+                suelo son áreas donde el suelo cambia a aguas profundas, 
+                áreas estériles, rocas o hielo. En algunos lugares, la 
+                separación entre suelo y no suelo es tan gradual que no se 
+                pueden hacer distinciones claras.</p>
+            <p>El límite inferior que separa al suelo del no suelo 
+                subyacente es el más difícil de definir. El suelo consiste 
+                de horizontes cercanos a la superficie terrestre que, en 
+                contraste con el material parental subyacente, han sido 
+                alterados por las interacciones del clima, relieve y 
+                organismos vivos sobre el tiempo. Es común que el suelo 
+                en su límite inferior cambie a roca dura o materiales 
+                terrestres virtualmente desprovistos de animales, raíces u 
+                otras marcas de actividad biológica. Sin embargo, la 
+                profundidad inferior de la actividad biológica es difícil de 
+                establecer y con frecuencia es gradual. Para propósitos de 
+                clasificación, el límite inferior del suelo se fija de manera 
+                arbitraria a 200 cm. En suelos donde la actividad 
+                biológica o los procesos pedogenéticos actuales se 
+                extiendan a profundidades mayores de 200 cm, el límite 
+                inferior del suelo con propósitos de clasificación se 
+                mantiene a esa profundidad. En algunos casos, los lechos 
+                rocosos débilmente cementados (materiales paralíticos, 
+                definidos posteriormente) se han descrito y utilizado para 
+                diferenciar a series de suelos (en la sección de control de 
+                series, definida posteriormente), a pesar de que en un 
+                sentido estricto, los materiales por debajo de un contacto 
+                paralítico no son considerados como verdaderos suelos. 
+                En áreas donde el suelo tenga horizontes delgados 
+                cementados que impiden el crecimiento de las raíces, la 
+                profundidad del suelo será hasta donde se localice el 
+                horizonte cementado más profundo, pero no hasta los 200 
+                cm. Para ciertos objetivos de manejo, capas más 
+                profundas que el límite inferior del suelo que es 
+                clasificado (200 cm), también se pueden describir si 
+                afectan el contenido y el movimiento del agua, del aire o a 
+                otras interpretaciones realizadas.</p>
+            <p>En los trópicos húmedos, los materiales terrestres se 
+                pueden extender a profundidades de varios metros con 
+                cambios no obvios por debajo de los primeros 1 o 2 m 
+                superiores, excepto para líneas de piedras ocasionales. En 
+                muchos suelos saturados, los materiales de suelo gleyzado 
+                se pueden localizar a pocos centímetros de la superficie y 
+                en otros se pueden extender hasta varios metros sin 
+                cambios aparentes con el incremento de la profundidad. 
+                La última condición puede ocurrir con el relleno gradual 
+                de una cuenca saturada, donde se permita que el horizonte 
+                A sea gradualmente agregado a la superficie y se 
+                convierta en material gleyzado en la parte baja. 
+                Finalmente, el horizonte A descansará sobre una masa 
+                espesa de material gleyzado que puede ser relativamente 
+                uniforme. En las dos condiciones mencionadas no hay 
+                alternativas, por lo que el límite inferior del suelo se 
+                establecerá arbitrariamente en 200 cm.</p>
+            <p>El suelo, como se ha definido en este texto, no necesita 
+                presentar horizontes bien diferenciados, aun cuando la 
+                presencia o ausencia de horizontes y su naturaleza son de 
+                extrema importancia para la clasificación del suelo. Las 
+                plantas se pueden desarrollar dentro de frascos rellenados 
+                con materiales terrestres, como turba o arena, o incluso dentro de agua. Bajo condiciones apropiadas, todos estos 
+                medios son adecuados para producir plantas, pero son 
+                considerados como no suelos en el sentido que ellos no 
+                pueden ser clasificados dentro del mismo sistema que se 
+                emplea para los suelos de un área, condado o incluso 
+                nación. Las plantas se pueden desarrollar sobre árboles o 
+                en las grietas del lecho de roca expuesto, (por ejemplo, en 
+                un afloramiento rocoso) pero los árboles y los 
+                afloramientos rocosos no se consideran suelos.
+                Los suelos tienen muchas propiedades que fluctúan 
+                con las estaciones del año; pueden presentar condiciones 
+                frías y calientes, o secas y húmedas en forma alternada. 
+                La actividad biológica puede disminuir o detenerse si el 
+                suelo se vuelve muy frío o muy seco. El suelo recibe 
+                flujos de materia orgánica fresca sin descomponer cuando 
+                las hojas caen o las hierbas mueren. El suelo no es 
+                estático: el pH, las sales solubles, el contenido de materia 
+                orgánica y la relación carbono–nitrógeno, el número de 
+                microorganismos, la fauna, la temperatura y la humedad 
+                del suelo, cambian durante las estaciones del año como en 
+                períodos más extensos. El suelo deberá entenderse desde 
+                perspectivas a corto y a largo plazo.</p>  
+        </div>
     </div>
     </section>
-    
+    <section id="gelisoles">
+        <h2>Gelisoles</h2>
+        <div class="text">
+            <p>Gelisols que tienen materiales orgánicos de suelo 
+            que satisfacen una o más de las siguientes características:</p>
+            <ol>
+                <li>Sobreyacen a tefras, materiales fragmentales o 
+                    pomáceos y/o rellenan sus intersticios y, directamente 
+                    abajo de éstos, tienen un contacto dénsico, lítico o 
+                    paralítico; o
+                </li>
+                <li>
+                    Cuando se suman con las tefras, materiales 
+                    fragmentales o pomáceos, constituyen un total de 40 
+                    cm o más entre la superficie del suelo y una 
+                    profundidad de 50 cm; o
+                </li>
+                <li>
+                    Constan de 80 por ciento o más, por volumen, de 
+                    materiales orgánicos de suelo, desde la superficie del 
+                    suelo hasta una profundidad de 50 cm o a una capa 
+                    glácica o a un contacto dénsico, lítico o paralítico, 
+                    cualquiera que esté menos profundo. 
+                </li>
+            </ol>
+            <p>
+                Otros Gelisols que tienen uno o más horizontes 
+                que muestran crioturbación en forma de límites de 
+                horizontes irregulares, quebradizos o distorsionados, 
+                como involuciones, acumulación de materia orgánica
+                sobre la parte superior de un permafrost, cuñas de hielo o 
+                arena y como fragmentos de roca orientados.
+            </p>
+        </div>
+    </section>
     <section id="alfisoles">
     <h2>Alfisoles</h2>
     <div class="text">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>Alfisols que tienen, en uno o más horizontes, dentro 
+            de los 50 cm de la superficie del suelo mineral, condiciones 
+            ácuicas (diferentes a las condiciones antrácuicas) por algún 
+            tiempo en años normales (o artificialmente drenados); y
+            tienen una o ambas de las siguientes características:</p>
+        <ol>
+            <li>Rasgos redoximórficos en todas las capas entre el 
+                límite inferior de un horizonte Ap o a una profundidad 
+                de 25 cm abajo de la superficie del suelo mineral
+                (cualquiera que esté más profundo), y una profundidad 
+                de 40 cm; y una de las siguientes dentro de los 12.5 cm 
+                superiores del horizonte argílico, nátrico, glóssico o 
+                kándico:
+            </li>
+            <ol type="a">
+                <li>50 por ciento o más de empobrecimientos redox 
+                    con un chroma de 2 o menos sobre las caras de los 
+                    peds y concentraciones redox dentro de los peds; o
+                </li>
+                <li>
+                    Concentraciones redox y 50 por ciento o más de 
+                    empobrecimientos redox con un chroma de 2 o 
+                    menos en la matriz; o
+                </li>
+                <li>
+                    50 por ciento o más de empobrecimientos redox 
+                    con un chroma de 1 o menos sobre las caras de los 
+                    peds o en la matriz o en ambos; o
+                </li>
+            </ol>
+            <li>
+                En los horizontes que tienen condiciones ácuicas, 
+                suficiente hierro ferroso activo para dar una reacción 
+                positiva a la dipiril-alfa,alfa, cuando el suelo no esté 
+                bajo riego. 
+            </li>
+        </ol>
+
     </div>
     
     <div class="floor-pic">
@@ -87,39 +272,135 @@
     
     <section id="andisoles">
     <h2>Andisoles</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>Andisols que tienen ya sea:</p>
+        <ol>
+            <li>Un epipedón hístico; o</li>
+            <li>En una capa encima de un contacto dénsico, lítico 
+                o paralítico o en una capa a una profundidad entre 40 
+                y 50 cm a partir de la superficie del suelo mineral o a 
+                partir de la parte superior de una capa orgánica con 
+                propiedades ándicas de suelo, cualquiera que esté 
+                menos profunda, condiciones ácuicas por algún 
+                tiempo en años normales (o drenados artificialmente) 
+                y una o más de las siguientes características:
+            </li>
+            <ol type="a">
+                <li>2 por ciento o más de concentraciones redox; o</li>
+                <li>Un color del value, en húmedo, de 4 o más y 50 
+                    por ciento o más de chroma de 2 o menos en 
+                    empobrecimientos redox sobre las caras de los peds 
+                    o en la matriz si los peds están ausentes; o
+                </li>
+                <li>
+                    Suficiente hierro ferroso activo para dar una 
+                    reacción positiva al dipiridil-alfa,alfa, al momento 
+                    de que el suelo no esté bajo riego.
+                </li>
+            </ol>
+        </ol>
     </section>
     <section id="aridisoles">
     <h2>Aridisoles</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>Otros Argids que no tienen un contacto dénsico, lítico o paralítico dentro de los 50 cm de la superficie del suelo, y tienen ya sea: </p>
+        <ol>
+            <li>Un horizonte argílico que tiene 35 por ciento más 
+                de arcilla no carbonatada, a través de uno o más 
+                subhorizontes en su parte superior, y una o más de las 
+                siguientes características:</li>
+                <ol type="a">
+                    <li>Un incremento de arcilla de 15 por ciento o más 
+                        (absoluto) dentro de una distancia vertical de 2.5 
+                        cm, ya sea dentro del horizonte argílico o en su 
+                        límite superior; o
+                    </li>
+                    <li>
+                        Un cambio abrupto de textura entre el horizonte 
+                        eluvial y el límite superior del horizonte argílico; o
+                    </li>
+                </ol>
+            <li>
+                Un horizonte argílico que se extiende hasta 150 cm 
+                o más desde la superficie del suelo, que no tiene un 
+                decremento de arcilla con el incremento de la 
+                profundidad de 20 por ciento o más (relativo) del 
+                máximo contenido de arcilla, y tiene, en 50 por ciento 
+                o más de la matriz, en alguna parte entre 100 y 150 
+                cm, ya sea:
+                <ol type="a">
+                    <li>Un hue de 7.5 YR o más rojizo y un chroma de 5 o más; o</li>
+                    <li>Un hue de 7.5 YR o más rojizo y un value, en húmedo, de 3 o menos y un value, en seco, de 4 o menos.</li>
+                </ol>
+            </li>
+        </ol>
     </section>
     <section id="entisoles">
     <h2>Entisoles</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>Entisols que tienen un potencial de agua positivo 
+        en la superficie del suelo por más de 21 horas de cada día 
+        en todos los años.
+        </p>
+        <p>Otros Entisols que tienen una o más de las siguientes características: </p>
+        <ol>
+            <li>Condiciones ácuicas y materiales sulfídicos dentro de los 50 cm de la superficie del suelo mineral; o</li>
+            <li>Saturación permanente con agua y una matriz reducida en todos los horizontes debajo de los 25 cm a partir de la superficie del suelo mineral o</li>
+            <li>En una capa encima de un contacto dénsico, lítico 
+                o paralítico, o en una capa entre 40 y 50 cm abajo de 
+                la superficie del suelo mineral, cualquiera que esté 
+                menos profundo, condiciones ácuicas por algún 
+                tiempo en años normales (o drenaje artificial) y una o 
+                más de las siguientes características:</li>
+                <ol type="a">
+                    Una clase textural más fina que la arena 
+                    francosa fina, y en 50 por ciento o más de la matriz, 
+                    una o más de las siguientes características: 
+                </ol>
+        </ol>
     </section>
     <section id="inceptisoles">
     <h2>Inceptisoles</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        <p>Inceptisols que tienen una o más de las siguientes 
+            características:</p>
+        <ol>
+            <li>
+                En una capa encima de un contacto dénsico, lítico 
+o paralítico o en una capa a una profundidad entre 40 
+y 50 cm a partir de la superficie del suelo mineral, 
+cualquiera que esté menos profundo, condiciones 
+ácuicas por algún tiempo en años normales (o drenaje 
+artificial) y una o más de las siguientes características:
+            </li>
+            <ol type="a">
+                <li>Un epipedón hístico; o</li>
+                <li>Un horizonte sulfúrico dentro de los 50 cm de la 
+                    superficie del suelo mineral; o</li>
+                <li>Una capa directamente abajo del epipedón o 
+                    dentro de los 50 cm de la superficie del suelo 
+                    mineral, que tiene sobre las caras de los peds o en la 
+                    matriz si los peds están ausentes, 50 por ciento o 
+                    más de un chroma que es ya sea:
+                </li>
+                <ul>
+                    <li>2 o menos, si existen concentraciones redox;</li>
+                    <li>1 o menos; o</li>
+                </ul>
+                <li>
+                    Dentro de los 50 cm de la superficie del suelo 
+mineral, suficiente hierro ferroso activo para dar 
+una reacción positiva a la dipiridil-alfa,alfa, en el 
+momento de que el suelo no esté bajo riego; o
+                </li>
+            </ol>
+            <li>
+                Un porcentaje de sodio intercambiable (PSI) de 15 
+o más (o una relación de adsorción de sodio [RAS] de 
+13 o más) en la mitad o más del volumen del suelo 
+dentro de los 50 cm de la superficie del suelo mineral, 
+un decrecimiento de los valores de PSI (o RAS) con el 
+incremento de la profundidad abajo de los 50 cm, y 
+nivel del agua dentro de los 100 cm de la superficie 
+del suelo mineral por algún tiempo durante el año.
+            </li>
+        </ol>
     </section>
     <section id="histosoles">
     <h2>Histosoles</h2>
