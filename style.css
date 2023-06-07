@@ -53,8 +53,16 @@ p{
     line-height: 2em;
 }
 
+p{
+    line-height: 2em;
+}
+
 ol{
     line-height: 2em;
+}
+
+ul{
+    list-style: none;
 }
 
 li{
@@ -74,10 +82,12 @@ li{
     transition: transform 0.3s ease-in-out;
     z-index: 999;
     overflow: auto;
+    scroll-behavior: smooth;
     box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
 -webkit-box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
 -moz-box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
 }
+
 
 .sidebar.closed {
     transform: translateX(-100%);
@@ -151,6 +161,10 @@ box-sizing: border-box;
 .img-first{
     float: right;
     width: 50%;
+}
+
+.img-2{
+    width: 90%;
 }
 
   /* Estilos para el contenido de las secciones */
@@ -282,4 +296,3 @@ section {
     padding: 20px;
     }
 }
-
