@@ -70,3 +70,31 @@ document.addEventListener("DOMContentLoaded", function() {
     chatLog.scrollTop = chatLog.scrollHeight;
 }
 });
+
+
+//Preguntas
+
+document.getElementById('quizForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Obtener las respuestas seleccionadas
+    var q1 = document.querySelector('input[name="q1"]:checked');
+    var q2 = document.querySelector('input[name="q2"]:checked');
+    var q3 = document.querySelector('input[name="q3"]:checked');
+    var q4 = document.querySelector('input[name="q4"]:checked');
+    var q5 = document.querySelector('input[name="q5"]:checked');
+    
+    // Verificar si todas las preguntas han sido respondidas
+    if (q1 === null || q2 === null || q3 === null || q4 === null || q5 === null) {
+        alert('Por favor, responde todas las preguntas.');
+        return;
+    }
+    
+    // Calcular la calificación promedio
+    var score = (parseInt(q1.value) + parseInt(q2.value) + parseInt(q3.value) + parseInt(q4.value) + parseInt(q5.value)) / 5;
+    
+    // Mostrar el resultado
+    var resultDiv = document.getElementById('result');
+    resultDiv.textContent = 'Tu calificación es: ' + score.toFixed(2) + ' estrellas.';
+  });
+  

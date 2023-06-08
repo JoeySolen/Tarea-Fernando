@@ -37,7 +37,7 @@ h1{
 }
 
 h2{
-    width: 25%;
+    width: 30%;
     border-left: solid 2px;
     border-bottom: solid 2px;
     border-radius: 0 15px 0 0;
@@ -257,8 +257,8 @@ section {
 .send-button {
     position: absolute;
     right: 20px;
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 58px;
     font-size: 14px;
     border: none;
     border-radius: 50%;
@@ -266,6 +266,81 @@ section {
     color: white;
     cursor: pointer;
     text-align: center;
+}
+
+.send-button:hover{
+    background-color: var(--contrast-pink-1);
+}
+
+/*Iniciar sesión*/
+
+#login-form{
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/*Estilos para el cuestionario*/
+#quizForm{
+    width: 50%;
+    margin: auto;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input[type="radio"]:checked ~ label {
+    background-color: #ffca08;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-submit{
+    margin: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--contrast-pink-2);
+    color: var(--body-bg-color);
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-submit:hover{
+    background-color: var(--contrast-pink-1);
 }
 
   /* Estilos responsive */
