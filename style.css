@@ -153,8 +153,9 @@ box-sizing: border-box;
 }
 
 .main-container{
-    width: 50%;
-    margin: auto;
+    clear: left;
+    width: 960px;
+    margin: 0 auto 10px;
     /* line-height: 1.8em; */
 }
 
@@ -304,8 +305,13 @@ button:hover {
 
 
 /*Estilos para el cuestionario*/
+
+.question-block{
+    display: flex;
+}
+
 #quizForm{
-    width: 50%;
+    width: 80%;
     margin: auto;
 }
 

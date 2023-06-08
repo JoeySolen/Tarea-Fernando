@@ -71,6 +71,23 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 });
 
+//Login
+
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita el envío del formulario por defecto
+    // Obtiene los valores ingresados por el usuario
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Comprueba las credenciales de inicio de sesión
+    if (username === "usuario" && password === "contraseña") {
+      // Redirecciona a la página deseada
+        window.location.href = "./preguntas.html";
+        alert("Bienvenido");
+    } else {
+    alert("Credenciales incorrectas. Por favor, intenta de nuevo.");
+    }
+});
 
 //Preguntas
 
@@ -96,5 +113,4 @@ document.getElementById('quizForm').addEventListener('submit', function(e) {
     // Mostrar el resultado
     var resultDiv = document.getElementById('result');
     resultDiv.textContent = 'Tu calificación es: ' + score.toFixed(2) + ' estrellas.';
-  });
-  
+});
