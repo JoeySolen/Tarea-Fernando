@@ -8,7 +8,6 @@ body {
     background-color: var(--body-bg-color);
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
 }
 :root {
     --body-bg-color: #fffded;
@@ -19,342 +18,353 @@ body {
     --contrast-pink-2:#da9090;
     --complement-bg-1:#F3B16730;
 }
-
-h1{
-    width: 80%;
-    margin-top: 0;
-    margin-left: 1em;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-bottom: .5em;
-    padding-right: .5em;
-    text-align: left;
-    line-height: 1.3em;
-    border-radius: 0 0 15px 0;
-    background-color: var(--contrast-green-1);
-    color: #fff;
-    font-size: 2.6em;
-}
-
-h2{
-    width: 30%;
-    border-left: solid 2px;
-    border-bottom: solid 2px;
-    border-radius: 0 15px 0 0;
-    padding-left: .2em;
-    padding-bottom: .1em;
-    background-color: var(--complement-bg-1);
-    border-color: #3b7c6d50;
-    color:#275c4e;
-    font-size: 2.1em;
-}
-
-p{
-    line-height: 2em;
-}
-
-p{
-    line-height: 2em;
-}
-
-ol{
-    line-height: 2em;
-}
-
-ul{
-    list-style: none;
-}
-
-li{
-    margin-bottom: 1em;
-}
-    /* Estilos para el menú lateral */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 200px;
+@media (min-width: 500px), screen and (max-width:10000px) {
+    h1{
+        width: 80%;
+        margin-top: 0;
+        margin-left: 1em;
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-bottom: .5em;
+        padding-right: .5em;
+        text-align: left;
+        line-height: 1.3em;
+        border-radius: 0 0 15px 0;
+        background-color: var(--contrast-green-1);
+        color: #fff;
+        font-size: 2.6em;
+    }
+    
+    h2{
+        width: 30%;
+        border-left: solid 2px;
+        border-bottom: solid 2px;
+        border-radius: 0 15px 0 0;
+        padding-left: .2em;
+        padding-bottom: .1em;
+        background-color: var(--complement-bg-1);
+        border-color: #3b7c6d50;
+        color:#275c4e;
+        font-size: 2.1em;
+    }
+    
+    p{
+        line-height: 2em;
+    }
+    
+    p{
+        line-height: 2em;
+    }
+    
+    ol{
+        line-height: 2em;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    li{
+        margin-bottom: 1em;
+    }
+        /* Estilos para el menú lateral */
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        box-sizing: border-box;
+        background-color: var(--contrast-green-1);
+        border: solid 1px;
+        border-color: var(--contras-green-2);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+        overflow: auto;
+        scroll-behavior: smooth;
+        box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
+    -moz-box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
+    }
+    
+    
+    .sidebar.closed {
+        transform: translateX(-100%);
+    }
+    
+    .sidebar ul {
+        list-style: none;
+        padding: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sidebar a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .sidebar li{   
+    height: 1.3em;
+    top: 50%;
+    padding-left: 20px;
     box-sizing: border-box;
-    background-color: var(--contrast-green-1);
-    border: solid 1px;
-    border-color: var(--contras-green-2);
-    transition: transform 0.3s ease-in-out;
-    z-index: 999;
-    overflow: auto;
-    scroll-behavior: smooth;
-    box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
--webkit-box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
--moz-box-shadow: -1px 3px 37px -3px rgba(0,0,0,0.31);
-}
-
-
-.sidebar.closed {
-    transform: translateX(-100%);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.sidebar a{
-    text-decoration: none;
-    color: #fff;
-}
-.sidebar li{   
-height: 1.3em;
-top: 50%;
-padding-left: 20px;
-box-sizing: border-box;
-}
-
-.sidebar li:hover{
-    border-left:solid 4px;
-    border-color: var(--contrast-pink-1);
-    padding-left: 16px;
-    text-decoration: none;
-    color: #fff;
-    box-sizing: border-box;
-}
-
-  /* Estilos para el botón flotante */
-
-.floating-button-container{
-    position: fixed;
-    background-color: var(--contras-green-2);
-    width: 60px;
-    height: 70px;
-    left: 69px;
-    border-radius: 0 0 30px 30px;
-    z-index: 1000;
-}
-.floating-button {
-    position: fixed;
-    left: 75px;
-    top: 15px;
-    width: 50px;
-    height: 50px;
-    background-color: var(--contrast-pink-2);
-    color: var(--body-bg-color);
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 999;
-}
-
-.floating-button:hover {
-    background-color: var(--contrast-pink-1);
-}
-
-.main-container{
-    clear: left;
-    width: 960px;
-    margin: 0 auto 10px;
-}
-
-.img-first{
-    float: right;
-    width: 50%;
-}
-
-.img-2{
-    width: 90%;
-}
-
-  /* Estilos para el contenido de las secciones */
-section {
-    padding: 40px;
-    margin-top: 20px;
-}
-
-.btn-home{
-    position: relative;
-    background-color: #669e91;
-    color: #fffceb;
-    padding: 20px;
-    margin-top: 80px;
-    cursor: pointer;
-}
-.btn-home:hover{
-    background-color: #3b7c6d;
-}
-.btn-tutor{
-    position: relative;
-    background-color: #669e91;
-    color: #fffceb;
-    padding: 20px;
-    cursor: pointer;
-}
-.btn-tutor:hover{
-    background-color: #3b7c6d;
-}
-
-/*Estilos paa el acordeón del menú lateral*/
-.accordion{
-    position: relative;
-    width: 100%;
-    left: 0;
-    transition: max-height 0.2s ease-out;
-}
-
-.accordion-header {
-    position: relative;
-    background-color: #669e91;
-    color: #fffceb;
-    padding: 20px;
-    cursor: pointer;
-}
-
-.accordion-header:hover{
-    background-color: #3b7c6d;
-}
-
-.accordion-content {
-    display: none;
-}
-
-.accordion-content.show {
-    display: block;
-    padding: 20px;
+    }
+    
+    .sidebar li:hover{
+        border-left:solid 4px;
+        border-color: var(--contrast-pink-1);
+        padding-left: 16px;
+        text-decoration: none;
+        color: #fff;
+        box-sizing: border-box;
+    }
+    
+      /* Estilos para el botón flotante */
+    
+    .floating-button-container{
+        position: fixed;
+        background-color: var(--contras-green-2);
+        width: 60px;
+        height: 70px;
+        left: 69px;
+        border-radius: 0 0 30px 30px;
+        z-index: 1000;
+    }
+    .floating-button {
+        position: fixed;
+        left: 75px;
+        top: 15px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--contrast-pink-2);
+        color: var(--body-bg-color);
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 999;
+    }
+    
+    .floating-button:hover {
+        background-color: var(--contrast-pink-1);
+    }
+    
+    .main-container{
+        clear: left;
+        width: 960px;
+        margin: 0 auto 10px;
+    }
+    
+    .img-first{
+        float: right;
+        width: 50%;
+    }
+    
+    .img-2{
+        width: 90%;
+    }
+    
+      /* Estilos para el contenido de las secciones */
+    section {
+        padding: 40px;
+        margin-top: 20px;
+    }
+    
+    .btn-home{
+        position: relative;
+        background-color: #669e91;
+        color: #fffceb;
+        padding: 20px;
+        margin-top: 80px;
+        cursor: pointer;
+    }
+    .btn-home:hover{
+        background-color: #3b7c6d;
+    }
+    .btn-tutor{
+        position: relative;
+        background-color: #669e91;
+        color: #fffceb;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .btn-tutor:hover{
+        background-color: #3b7c6d;
+    }
+    
+    /*Estilos paa el acordeón del menú lateral*/
+    .accordion{
+        position: relative;
+        width: 100%;
+        left: 0;
+        transition: max-height 0.2s ease-out;
+    }
+    
+    .accordion-header {
+        position: relative;
+        background-color: #669e91;
+        color: #fffceb;
+        padding: 20px;
+        cursor: pointer;
+    }
+    
+    .accordion-header:hover{
+        background-color: #3b7c6d;
+    }
+    
+    .accordion-content {
+        display: none;
+    }
+    
+    .accordion-content.show {
+        display: block;
+        padding: 20px;
+        }
+    
+    /*Estilos para el chat*/
+    
+    .chat-container {
+        position: relative;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .chat-log {
+        height: 300px;
+        overflow-y: scroll;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    .user-input {
+        width: 100%;
+        height: 60px;
+        padding: 20px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+    
+    .send-button {
+        position: absolute;
+        right: 20px;
+        width: 58px;
+        height: 58px;
+        font-size: 14px;
+        border: none;
+        border-radius: 50%;
+        background-color: var(--contrast-pink-2);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .send-button:hover{
+        background-color: var(--contrast-pink-1);
+    }
+    
+    /*Iniciar sesión*/
+    
+    #login-form{
+        margin: auto;
+        width: 300px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 300px;
+        margin-top: 2em;
     }
 
-/*Estilos para el chat*/
-
-.chat-container {
-    position: relative;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    input{
+        width: 300px;
+        height: 2em;
+        border:none;
+        border-bottom: solid 1px;
+        border-color: var(--contras-green-2);
+        background-color: #82BCAE30;
+    }
+    
+    button {
+        background-color: var(--contrast-pink-2);
+        color: white;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+    
+    button:hover {
+        background-color: var(--contrast-pink-1);
+    }
+    
+    
+    /*Estilos para el cuestionario*/
+    
+    .question-block{
+        display: flex;
+    }
+    
+    #quizForm{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .rating label {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input[type="radio"]:checked ~ label {
+        background-color: #ffca08;
+    }
+    
+    #result {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .btn-submit{
+        margin: 50px;
+        width: 200px;
+        height: 50px;
+        background-color: var(--contrast-pink-2);
+        color: var(--body-bg-color);
+        border: none;
+        border-radius: 25px;
+    }
+    
+    .btn-submit:hover{
+        background-color: var(--contrast-pink-1);
+    }
 }
 
-.chat-log {
-    height: 300px;
-    overflow-y: scroll;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.user-input {
-    width: 100%;
-    height: 60px;
-    padding: 20px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box;
-}
-
-.send-button {
-    position: absolute;
-    right: 20px;
-    width: 58px;
-    height: 58px;
-    font-size: 14px;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--contrast-pink-2);
-    color: white;
-    cursor: pointer;
-    text-align: center;
-}
-
-.send-button:hover{
-    background-color: var(--contrast-pink-1);
-}
-
-/*Iniciar sesión*/
-
-#login-form{
-    margin: auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 30%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-
-/*Estilos para el cuestionario*/
-
-.question-block{
-    display: flex;
-}
-
-#quizForm{
-    width: 80%;
-    margin: auto;
-}
-
-.rating label {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-.rating label:hover,
-.rating label:hover ~ label,
-.rating input[type="radio"]:checked ~ label {
-    background-color: #ffca08;
-}
-
-#result {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.btn-submit{
-    margin: 50px;
-    width: 200px;
-    height: 50px;
-    background-color: var(--contrast-pink-2);
-    color: var(--body-bg-color);
-    border: none;
-    border-radius: 25px;
-}
-
-.btn-submit:hover{
-    background-color: var(--contrast-pink-1);
-}
 
   /* Estilos responsive */
-@media screen and (orientation: portrait){
-
+@media (max-width: 500px) {
     h1{
         width: 90%;
         margin: 0;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h2{
@@ -380,18 +390,16 @@ button:hover {
 
     .floating-button{
         position: absolute;
-        width: 80px;
-        height: 80px;
-        left: 11px;
-        top: 10px;
+        width: 50px;
+        height: 50px;
+        top: 5px;
     }
 
     .floating-button-container{
         position: fixed;
         background-color: var(--contras-green-2);
-        width: 100px;
-        height: 100px;
-        left: 69px;
+        width: 60px;
+        height: 80px;
         bottom: 0px;
         border-radius: 50px 50px 0 0;
         z-index: 1000;
@@ -429,5 +437,13 @@ button:hover {
 
     .main-container{
         width: 85%;
+    }
+
+    .send-button{
+        margin: 0;
+        right: 0em;
+        bottom: 21px;
+        left:261px;
+        padding: 0;
     }
 }

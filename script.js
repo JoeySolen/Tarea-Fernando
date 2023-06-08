@@ -83,7 +83,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     if (username === "usuario" && password === "contraseña") {
       // Redirecciona a la página deseada
         window.location.href = "./preguntas.html";
-        alert("Bienvenido");
+        alert("Bienvenido "+username);
     } else {
     alert("Credenciales incorrectas. Por favor, intenta de nuevo.");
     }
@@ -100,9 +100,19 @@ document.getElementById('quizForm').addEventListener('submit', function(e) {
     var q3 = document.querySelector('input[name="q3"]:checked');
     var q4 = document.querySelector('input[name="q4"]:checked');
     var q5 = document.querySelector('input[name="q5"]:checked');
+    var q6 = document.querySelector('input[name="q6"]:checked');
+    var q7 = document.querySelector('input[name="q7"]:checked');
+    var q8 = document.querySelector('input[name="q8"]:checked');
+    var q9 = document.querySelector('input[name="q9"]:checked');
+    var q10 = document.querySelector('input[name="q10"]:checked');
+    var q11 = document.querySelector('input[name="q11"]:checked');
+    var q12 = document.querySelector('input[name="q12"]:checked');
+    var q13 = document.querySelector('input[name="q13"]:checked');
+    var q14 = document.querySelector('input[name="q14"]:checked');
+    var q15 = document.querySelector('input[name="q15"]:checked');
     
     // Verificar si todas las preguntas han sido respondidas
-    if (q1 === null || q2 === null || q3 === null || q4 === null || q5 === null) {
+    if (q1 === null || q2 === null || q3 === null || q4 === null || q5 === null || q6 === null || q7 === null || q8 === null || q9 === null || q10 === null || q11 === null || q12 === null || q13 === null || q14 === null || q15 === null) {
         alert('Por favor, responde todas las preguntas.');
         return;
     }
