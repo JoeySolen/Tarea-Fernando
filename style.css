@@ -156,7 +156,6 @@ box-sizing: border-box;
     clear: left;
     width: 960px;
     margin: 0 auto 10px;
-    /* line-height: 1.8em; */
 }
 
 .img-first{
@@ -359,7 +358,8 @@ button:hover {
     }
 
     h2{
-        font-size: 50px;
+        font-size: 60px;
+        width: 350px;
     }
     .sidebar {
     position: fixed;
@@ -368,60 +368,66 @@ button:hover {
     background-color: #f1f1f1;
     transform: none;
     overflow: auto;
-}
+    }
 
-    .sidebar.closed {
-    transform: translateX(-110%);
-}
+        .sidebar.closed {
+        transform: translateX(-110%);
+    }
+
+        .sidebar ul {
+        text-align: center;
+    }
+
+    .floating-button{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 11px;
+        top: 10px;
+    }
+
+    .floating-button-container{
+        position: fixed;
+        background-color: var(--contras-green-2);
+        width: 100px;
+        height: 100px;
+        left: 69px;
+        bottom: 0px;
+        border-radius: 50px 50px 0 0;
+        z-index: 1000;
+    }
+
+    .btn-home{
+        height: 50px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    .accordion-header{
+        height: 50px;
+        font-size: 2em;
+    }
 
     .sidebar ul {
-    text-align: center;
-}
+        background-color: var(--contrast-green-1);
+        margin: 0px;
+        font-size: 2em;
+    }
 
-.floating-button-container{
-    position: fixed;
-    background-color: var(--contras-green-2);
-    width: 100px;
-    height: 100px;
-    left: 69px;
-    bottom: 0px;
-    border-radius: 50px 50px 0 0;
-    z-index: 1000;
-}
-
-#floating-button {
-    bottom: 0px;
-    right: 20px;
-    width: 80px;
-    height: 80px;
-}
-.btn-home{
-    height: 50px;
-    font-size: 2em;
-    margin-top: 3em;
-}
-.accordion-header{
-    height: 50px;
-    font-size: 2em;
-}
-
-.sidebar ul {
-    background-color: var(--contrast-green-1);
-    margin: 0px;
-    font-size: 2em;
-}
-
-.sidebar li {
-    margin: 0;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-.btn-tutor{
-    height: 50px;
-    font-size: 2em;
-}
+    .sidebar li {
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+    .btn-tutor{
+        height: 50px;
+        font-size: 2em;
+    }
 
     section {
     padding: 20px;
+    }
+
+    .main-container{
+        width: 85%;
     }
 }
