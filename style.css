@@ -352,12 +352,12 @@ button:hover {
   /* Estilos responsive */
 @media screen and (orientation: portrait){
     .sidebar {
-    position: static;
+    position: fixed;
     height: auto;
     width: 100%;
     background-color: #f1f1f1;
-    padding: 20px;
     transform: none;
+    overflow: auto;
 }
 
     .sidebar.closed {
@@ -368,9 +368,47 @@ button:hover {
     text-align: center;
 }
 
+.floating-button-container{
+    position: fixed;
+    background-color: var(--contras-green-2);
+    width: 100px;
+    height: 100px;
+    left: 69px;
+    border-radius: 0 0 50px 50px;
+    z-index: 1000;
+}
+
     .floating-button {
     bottom: 80px;
     right: 20px;
+    top: 15px;
+    width: 80px;
+    height: 80px;
+}
+.btn-home{
+    height: 50px;
+    font-size: 2em;
+    margin-top: 3em;
+}
+.accordion-header{
+    height: 50px;
+    font-size: 2em;
+}
+
+.sidebar ul {
+    background-color: var(--contrast-green-1);
+    margin: 0px;
+    font-size: 2em;
+}
+
+.sidebar li {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.btn-tutor{
+    height: 50px;
+    font-size: 2em;
 }
 
     section {
