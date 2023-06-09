@@ -71,24 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 });
 
-//Login
-
-document.getElementById("login-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita el envío del formulario por defecto
-    // Obtiene los valores ingresados por el usuario
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-
-    // Comprueba las credenciales de inicio de sesión
-    if (username === "usuario" && password === "contraseña") {
-      // Redirecciona a la página deseada
-        window.location.href = "./preguntas.html";
-        alert("Bienvenido "+username);
-    } else {
-    alert("Credenciales incorrectas. Por favor, intenta de nuevo.");
-    }
-});
-
 //Preguntas
 
 document.getElementById('quizForm').addEventListener('submit', function(e) {
@@ -117,10 +99,30 @@ document.getElementById('quizForm').addEventListener('submit', function(e) {
         return;
     }
     
-    // Calcular la calificación promedio
-    var score = (parseInt(q1.value) + parseInt(q2.value) + parseInt(q3.value) + parseInt(q4.value) + parseInt(q5.value)) / 5;
+  // Calcular la calificación promedio
+    var score = (parseInt(q1.value) + parseInt(q2.value) + parseInt(q3.value) + parseInt(q4.value) + parseInt(q5.value) + parseInt(q6.value) + parseInt(q7.value) + parseInt(q8.value) + parseInt(q9.value) + parseInt(q10.value) + parseInt(q11.value) + parseInt(q12.value) + parseInt(q13.value) + parseInt(q14.value) + parseInt(q15.value)) / 15;
     
-    // Mostrar el resultado
+  // Mostrar el resultado
     var resultDiv = document.getElementById('result');
-    resultDiv.textContent = 'Tu calificación es: ' + score.toFixed(2) + ' estrellas.';
+    
+    if(score===1){
+        resultDiv.textContent = 'Felicidades, obtuviste la calificación más alta';
+        myDiv0.style.display = 'block'; // Mostrar el div si está oculto
+    }
+    if(score==0.8){
+        resultDiv.textContent = 'Felicidades, obtuviste la insignia 4';
+        myDiv1.style.display = 'block'; // Mostrar el div si está oculto
+    }
+    if(score==0.6){
+        resultDiv.textContent = 'Felicidades, obtuviste la insignia 3';
+        myDiv2.style.display = 'block'; // Mostrar el div si está oculto
+    }
+    if(score==0.4){
+        resultDiv.textContent = 'Felicidades, obtuviste la insignia 2';
+        myDiv3.style.display = 'block'; // Mostrar el div si está oculto
+    }
+    if(score==0.2){
+        resultDiv.textContent = 'Felicidades, obtuviste la insignia 1';
+        myDiv4.style.display = 'block'; // Mostrar el div si está oculto
+    }
 });

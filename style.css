@@ -53,7 +53,7 @@ body {
     }
     
     p{
-        line-height: 2em;
+        /* line-height: 2em; */
     }
     
     ol{
@@ -132,7 +132,7 @@ body {
     }
     .floating-button {
         position: fixed;
-        left: 75px;
+        left: 74px;
         top: 15px;
         width: 50px;
         height: 50px;
@@ -150,7 +150,7 @@ body {
     .floating-button:hover {
         background-color: var(--contrast-pink-1);
     }
-    
+
     .main-container{
         clear: left;
         width: 960px;
@@ -286,14 +286,20 @@ body {
         margin-top: 2em;
     }
 
-    input{
+    .question-block input{
+        width: 20px;
+    }
+    .question-block p{
+        margin-left: .5em;
+    }
+    /* input{
         width: 300px;
         height: 2em;
         border:none;
         border-bottom: solid 1px;
         border-color: var(--contras-green-2);
         background-color: #82BCAE30;
-    }
+    } */
     
     button {
         background-color: var(--contrast-pink-2);
@@ -341,10 +347,15 @@ body {
         text-align: center;
         font-weight: bold;
         margin-top: 20px;
+        background-color: #82BCAE;
+        color: #fff;
+        height: 50px;
+        padding-top: 30px;
+        border-radius: 20px;
     }
     
     .btn-submit{
-        margin: 50px;
+        margin-left:35%;
         width: 200px;
         height: 50px;
         background-color: var(--contrast-pink-2);
@@ -356,6 +367,11 @@ body {
     .btn-submit:hover{
         background-color: var(--contrast-pink-1);
     }
+}
+
+.badge img{
+    margin-left: 40%;
+    padding-top: 30px;
 }
 
 
